@@ -1,0 +1,224 @@
+/* Inspired by https://codepen.io/htgmanics/pen/nJwdl */
+@keyframes rotating {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+    -moz-transform: rotate3d(0, 0, 0, 0deg);
+    -ms-transform: rotate3d(0, 0, 0, 0deg);
+    -o-transform: rotate3d(0, 0, 0, 0deg);
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 1, 0, 720deg);
+    -moz-transform: rotate3d(0, 1, 0, 720deg);
+    -ms-transform: rotate3d(0, 1, 0, 720deg);
+    -o-transform: rotate3d(0, 1, 0, 720deg);
+    transform: rotate3d(0, 1, 0, 720deg);
+  }
+}
+@keyframes rotatingY {
+  100% {
+    -webkit-transform: rotateY(-360deg);
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    -o-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+}
+@keyframes fluttering {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  10%,
+  60% {
+    -webkit-transform: translate3d(0, 150px, 0);
+    -moz-transform: translate3d(0, 150px, 0);
+    -ms-transform: translate3d(0, 150px, 0);
+    -o-transform: translate3d(0, 150px, 0);
+    transform: translate3d(0, 150px, 0);
+  }
+  30%,
+  80% {
+    -webkit-transform: translate3d(0, 50px, 0);
+    -moz-transform: translate3d(0, 50px, 0);
+    -ms-transform: translate3d(0, 50px, 0);
+    -o-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+  }
+}
+@keyframes left-wing-flap {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scaleX(1) rotate3d(0, 1, 0, 60deg);
+    -moz-transform: translate3d(0, 0, 0) scaleX(1) rotate3d(0, 1, 0, 60deg);
+    -ms-transform: translate3d(0, 0, 0) scaleX(1) rotate3d(0, 1, 0, 60deg);
+    -o-transform: translate3d(0, 0, 0) scaleX(1) rotate3d(0, 1, 0, 60deg);
+    transform: translate3d(0, 0, 0) scaleX(1) rotate3d(0, 1, 0, 60deg);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0) scaleX(1) rotate3d(0, 1, 0, -70deg);
+    -moz-transform: translate3d(0, 0, 0) scaleX(1) rotate3d(0, 1, 0, -70deg);
+    -ms-transform: translate3d(0, 0, 0) scaleX(1) rotate3d(0, 1, 0, -70deg);
+    -o-transform: translate3d(0, 0, 0) scaleX(1) rotate3d(0, 1, 0, -70deg);
+    transform: translate3d(0, 0, 0) scaleX(1) rotate3d(0, 1, 0, -70deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scaleX(1) rotate3d(0, 1, 0, 60deg);
+    -moz-transform: translate3d(0, 0, 0) scaleX(1) rotate3d(0, 1, 0, 60deg);
+    -ms-transform: translate3d(0, 0, 0) scaleX(1) rotate3d(0, 1, 0, 60deg);
+    -o-transform: translate3d(0, 0, 0) scaleX(1) rotate3d(0, 1, 0, 60deg);
+    transform: translate3d(0, 0, 0) scaleX(1) rotate3d(0, 1, 0, 60deg);
+  }
+}
+@keyframes right-wing-flap {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scaleX(-1) rotate3d(0, 1, 0, 60deg);
+    -moz-transform: translate3d(0, 0, 0) scaleX(-1) rotate3d(0, 1, 0, 60deg);
+    -ms-transform: translate3d(0, 0, 0) scaleX(-1) rotate3d(0, 1, 0, 60deg);
+    -o-transform: translate3d(0, 0, 0) scaleX(-1) rotate3d(0, 1, 0, 60deg);
+    transform: translate3d(0, 0, 0) scaleX(-1) rotate3d(0, 1, 0, 60deg);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0) scaleX(-1) rotate3d(0, 1, 0, -70deg);
+    -moz-transform: translate3d(0, 0, 0) scaleX(-1) rotate3d(0, 1, 0, -70deg);
+    -ms-transform: translate3d(0, 0, 0) scaleX(-1) rotate3d(0, 1, 0, -70deg);
+    -o-transform: translate3d(0, 0, 0) scaleX(-1) rotate3d(0, 1, 0, -70deg);
+    transform: translate3d(0, 0, 0) scaleX(-1) rotate3d(0, 1, 0, -70deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scaleX(-1) rotate3d(0, 1, 0, 60deg);
+    -moz-transform: translate3d(0, 0, 0) scaleX(-1) rotate3d(0, 1, 0, 60deg);
+    -ms-transform: translate3d(0, 0, 0) scaleX(-1) rotate3d(0, 1, 0, 60deg);
+    -o-transform: translate3d(0, 0, 0) scaleX(-1) rotate3d(0, 1, 0, 60deg);
+    transform: translate3d(0, 0, 0) scaleX(-1) rotate3d(0, 1, 0, 60deg);
+  }
+}
+
+.butterfly_container {
+  width: 100px;
+  height: 100px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.butterfly_container var {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  margin-top: -50px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.butterfly_container var.rotate3d {
+  -webkit-transform: rotate3d(1, 0.5, 0, 50deg);
+  -moz-transform: rotate3d(1, 0.5, 0, 50deg);
+  -ms-transform: rotate3d(1, 0.5, 0, 50deg);
+  -o-transform: rotate3d(1, 0.5, 0, 50deg);
+  transform: rotate3d(1, 0.5, 0, 50deg);
+}
+.butterfly_container var.translate3d {
+  -webkit-animation: fluttering 10s ease-in-out infinite;
+  -moz-animation: fluttering 10s ease-in-out infinite;
+  -ms-animation: fluttering 10s ease-in-out infinite;
+  -o-animation: fluttering 10s ease-in-out infinite;
+  animation: fluttering 10s ease-in-out infinite;
+}
+.butterfly_container figure.butterfly {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  margin-top: -50px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.butterfly_container figure.butterfly .wing {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: translate3d(0, 0, 0) rotate3d(1, 0.5, 0, 45deg);
+  -moz-transform: translate3d(0, 0, 0) rotate3d(1, 0.5, 0, 45deg);
+  -ms-transform: translate3d(0, 0, 0) rotate3d(1, 0.5, 0, 45deg);
+  -o-transform: translate3d(0, 0, 0) rotate3d(1, 0.5, 0, 45deg);
+  transform: translate3d(0, 0, 0) rotate3d(1, 0.5, 0, 45deg);
+}
+.butterfly_container figure.butterfly .wing.right {
+  -webkit-transform-origin: 50px 50px;
+  -moz-transform-origin: 50px 50px;
+  -ms-transform-origin: 50px 50px;
+  -o-transform-origin: 50px 50px;
+  transform-origin: 50px 50px;
+  -webkit-transform: translate3d(0px, 0, 0) scaleX(-1) rotate3d(0, 1, 0, 45deg);
+  -moz-transform: translate3d(0px, 0, 0) scaleX(-1) rotate3d(0, 1, 0, 45deg);
+  -ms-transform: translate3d(0px, 0, 0) scaleX(-1) rotate3d(0, 1, 0, 45deg);
+  -o-transform: translate3d(0px, 0, 0) scaleX(-1) rotate3d(0, 1, 0, 45deg);
+  transform: translate3d(0px, 0, 0) scaleX(-1) rotate3d(0, 1, 0, 45deg);
+  -webkit-animation: right-wing-flap 1s ease-in-out infinite;
+  -moz-animation: right-wing-flap 1s ease-in-out infinite;
+  -ms-animation: right-wing-flap 1s ease-in-out infinite;
+  -o-animation: right-wing-flap 1s ease-in-out infinite;
+  animation: right-wing-flap 1s ease-in-out infinite;
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+.butterfly_container figure.butterfly .wing.left {
+  -webkit-transform-origin: 50px 50px;
+  -moz-transform-origin: 50px 50px;
+  -ms-transform-origin: 50px 50px;
+  -o-transform-origin: 50px 50px;
+  transform-origin: 50px 50px;
+  -webkit-animation: left-wing-flap 1s ease-in-out infinite;
+  -moz-animation: left-wing-flap 1s ease-in-out infinite;
+  -ms-animation: left-wing-flap 1s ease-in-out infinite;
+  -o-animation: left-wing-flap 1s ease-in-out infinite;
+  animation: left-wing-flap 1s ease-in-out infinite;
+}
+.butterfly_container figure.butterfly .wing use {
+  display: block;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  fill: url(#image);
+}
+
+.svg-defs {
+  position: absolute;
+  height: 0;
+  width: 0;
+}
